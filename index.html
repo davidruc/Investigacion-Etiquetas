@@ -4,26 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas de parrafo</title>
+    <title>Etiquetas de multimedia</title>
 </head>
 <body>
 
-    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos unde delectus maxime minus iste alias ducimus soluta ipsam id laborum quia magnam sequi ullam dignissimos tempora, totam maiores quos quod!</blockquote>
-    <dd>El elemento HTML provee detalles acerca de o la definición de un término precedente (dt) en una lista de descripciones (dl).</dd>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, velit.</div>
-    <d1>Representa una lista descriptiva. El elemento encierra una lista de grupos de términos (especificados con el uso del elemento dt) y de descripciones (proveídas con elementos dd</d1>
-    <dt>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, error.</dt>
-    <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam dolor recusandae accusantium libero optio numquam ipsa doloremque, nobis vel ducimus reiciendis odio quasi dolorem perspiciatis, exercitationem architecto eum?</figcaption>
 
-    <figure>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas cumque nobis sapiente, aspernatur assumenda magnam officiis similique molestiae maiores.</figure>
-    <hr/> Lorem, ipsum.
-    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse praesentium enim porro!</li>
-    <menu>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ratione commodi dignissimos id animi saepe at dolorem fuga fugit, explicabo ea error! Ullam aut rem voluptatum laborum asperiores nihil consequatur.</menu>
-    <ol>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ratione dolores ipsa.</ol>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, aperiam quasi facere maxime culpa accusantium accusamus deserunt, tempora rerum odit ipsum? Fugit illo, alias quod quos officiis id ea unde! Perspiciatis voluptas voluptatibus aliquid vero. Consequuntur quas earum, velit quasi enim in voluptate voluptatibus praesentium beatae. Amet ex doloribus ullam?</p>
-    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas ratione. Nam provident perspiciatis quo nobis veritatis iure totam aperiam.</pre>
-    <ul>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, commodi.</ul>
+<area href="http://www.mozilla.com/firefox/"
+    alt="El navegador"
+    shape="rect"
+    coords="0,0,60,155">
     
+<!-- area es un elemento antiguo con el que pueden hacerse mapas simples y poco accesibles. No se recomienda su uso, es preferible diseñar los mapas con elementos en bloque y anclas. -->
+
+<audio src="audiotest_(1).ogg" autoplay></audio>
+
+<!-- El elemento audio se usa para insertar contenido de audio en un documento HTML o XHTML. El elemento audio se agregó como parte de HTML 5. -->
        
+
+<img src="imagen.png" alt="MDN">
+
+<!-- representa una imagen en el documento. -->
+
+<map> </map>
+
+<!-- crea una caja en bloque para contener elementos -->
+
+
+<video controls poster="/images/sample.gif">
+    <source src="sample.mp4" type="video/mp4">
+    <source src="sample.ogv" type="video/ogv">
+    <track kind="captions" src="sampleCaptions.vtt" srclang="en">
+    <track kind="descriptions"
+      src="sampleDescriptions.vtt" srclang="en">
+    <track kind="chapters" src="sampleChapters.vtt" srclang="en">
+    <track kind="subtitles" src="sampleSubtitles_de.vtt" srclang="de">
+    <track kind="subtitles" src="sampleSubtitles_en.vtt" srclang="en">
+    <track kind="subtitles" src="sampleSubtitles_ja.vtt" srclang="ja">
+    <track kind="subtitles" src="sampleSubtitles_oz.vtt" srclang="oz">
+    <track kind="metadata" src="keyStage1.vtt" srclang="en"
+      label="Key Stage 1">
+    <track kind="metadata" src="keyStage2.vtt" srclang="en"
+      label="Key Stage 2">
+    <track kind="metadata" src="keyStage3.vtt" srclang="en"
+      label="Key Stage 3">
+    <!-- Fallback -->
+    ...
+ </video>
+ <!-- permite especificar pistas de texto cronometradas (o datos basados en el tiempo), por ejemplo, para manejar subtítulos automáticamente. Y video permite tomar un video y utilizarlo en la página  -->
 </body>
 </html>
