@@ -4,17 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas de estructuramiento</title>
+    <title>Etiquetas de listas</title>
 
 </head>
 <body>
 
-    <!--<header></header> header se usa para definir un bloque de contenido que hará las veces de título de la página web. -->
-    <!-- <footer></footer>: define el pie de página de nuestra web. -->
-    <!-- <nav></nav> permite incluir diferentes enlaces para que el usuario pueda desplazarse entre las partes de nuestro sitio web. -->
-    <!-- <section></section> se usa para definir grandes secciones de nuestra página. -->
-    <!-- <article></article> marca los límites de un contenido específico, como una entrada de un blog o un artículo en general. -->
-    <!-- <aside></aside> se emplea para definir un contenido que está relacionado con la página, pero que se debe considerar como separado del contenido principal. -->
-    <!-- <div></div> permite dividir contenido de manera dinámica para editar la pagina. -->
+    <!-- <li></li> es la etiqueta básica de lista -->
+
+    <p> Tipos de dibujos</p>
+    <ul type=”circle”>
+        <li>Dibujo artístico</li>
+        <li>dibujo técnico</li>
+        <li>dibujo Geométrico</li>
+        <li>Dibujo Mecanico</li>
+    </ul>
+    <!-- VIÑETAS Están englobadas por las etiquetas <ul> y </ul>. Atributos con los
+    cuales es posible configurar el aspecto que va a tener la lista.
+    type="circle/disc/square". Define la viñeta a emplear en la lista. -->
+
+    <p> Tipos de dibujos</p>
+    <ol type=”A”>
+        <li>Dibujo artístico</li>
+        <li>dibujo técnico</li>
+        <li>dibujo Geométrico</li>
+        <li>Dibujo Mecanico</li>
+    </ol><br>
+    <blockquote><p>Materiales de dibujo</p>
+
+    <ol type=”i”start=”3”>
+        <li>Estudio de dibujo</li>
+        <li>Mesa de dibujo</li>
+        <li>Mesa de calco</li>
+        <li>Silla de dibujo</li>
+    </ol></blockquote>
+    <!-- LISTAS NUMERADAS Están englobadas por las etiquetas <ol> y </ol>. 
+    type="1 / a / A / i / I ". Establece orden numérico, alfabético o numeración
+    romana
+     start="n": donde n es el valor con el que comenzará la lista. Los valores del
+    parámetro "n" son números enteros a partir de 1. Si se omite este atributo la
+    lista comenzará por el número 1. -->
+
+
+
 </body>
 
