@@ -4,46 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas de listas</title>
+    <title>Etiquetas de tablas</title>
 
 </head>
 <body>
 
-    <!-- <li></li> es la etiqueta básica de lista -->
+    <table border='1'>
+        <caption>Tabla con caption</caption>
+        <tr> <td> tabla de una celda. </td>  </tr>
+    </table>
+    <!-- Es el encargado de darle un título descriptivo a las tablas. -->
 
-    <p> Tipos de dibujos</p>
-    <ul type=”circle”>
-        <li>Dibujo artístico</li>
-        <li>dibujo técnico</li>
-        <li>dibujo Geométrico</li>
-        <li>Dibujo Mecanico</li>
-    </ul>
-    <!-- VIÑETAS Están englobadas por las etiquetas <ul> y </ul>. Atributos con los
-    cuales es posible configurar el aspecto que va a tener la lista.
-    type="circle/disc/square". Define la viñeta a emplear en la lista. -->
+    <!-- <col> Permite especificar propiedades para una columna o un grupo de ellas. -->
 
-    <p> Tipos de dibujos</p>
-    <ol type=”A”>
-        <li>Dibujo artístico</li>
-        <li>dibujo técnico</li>
-        <li>dibujo Geométrico</li>
-        <li>Dibujo Mecanico</li>
-    </ol><br>
-    <blockquote><p>Materiales de dibujo</p>
+    <!-- <colgroup></colgroup> colgroup de column group = Grupo de columnas. Permite crear grupos de columnas -->
 
-    <ol type=”i”start=”3”>
-        <li>Estudio de dibujo</li>
-        <li>Mesa de dibujo</li>
-        <li>Mesa de calco</li>
-        <li>Silla de dibujo</li>
-    </ol></blockquote>
-    <!-- LISTAS NUMERADAS Están englobadas por las etiquetas <ol> y </ol>. 
-    type="1 / a / A / i / I ". Establece orden numérico, alfabético o numeración
-    romana
-     start="n": donde n es el valor con el que comenzará la lista. Los valores del
-    parámetro "n" son números enteros a partir de 1. Si se omite este atributo la
-    lista comenzará por el número 1. -->
+    <table>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>Doe</td>
+        </tr>
+    </table>
+    <!-- El Elemento de Tabla HTML (<table>) representa datos en dos o mas dimensiones. -->
 
+    <table>
+        <caption>Council budget (in £) 2018</caption>
+        <thead>
+            <tr>
+                <th>Items</th>
+                <th scope="col">Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Donuts</th>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <th scope="row">Stationery</th>
+                <td>18,000</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- 
+    indica que están contenidas dentro del cuerpo de la tabla -->
+
+    <!-- El elemento HTML Celda de tabla (<td>) define la celda de una tabla que contiene datos. Esta participa en el modelo de tablas. -->
+<!-- 
+        El elemento HTML <th> define una celda como encabezado de un grupo de celdas en una tabla. La naturaleza exacta de este grupo está definida por los atributos scope y headers. -->
+
+      
+    <!-- El elemento HTML <thead> define un conjunto de filas que definen el encabezado de las columnas de la tabla       -->
+    <!-- El elemento HTML fila de tabla (table row) <tr> define una fila de celdas en una tabla. Estas pueden ser una mezcla de elementos <td> y <th>. -->
 
 
 </body>
