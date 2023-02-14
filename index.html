@@ -4,95 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas de formato de texto</title>
+    <title>Etiquetas de estructuramiento</title>
+
 </head>
 <body>
-  
-    <a href="tel:+123456789">Phone</a>
-    <!-- crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. -->
-    <p>I do <abbr title="Hypertext Markup Language">HTML</abbr></p>
-    <!-- representa una abreviación o acrónimo; el atributo opcional title puede ampliar o describir la abreviatura. -->
-    <p><b> texto en negrilla</b></p>
-    <p><bdi>texto a formatear</bdi></p>
-    <!-- aisla un trozo de texto para que pueda ser formateado con una dirección diferente al texto que hay fuera de él. -->
-    <p> cero(0)
-        <bdo dir="rtl">
-        <em> uno(1) dos(2) </em> tres(3) cuatro(4)
-        <em dir="ltr"> cinco(5) seis(6) </em> siete(7) ocho(8)
-        </bdo> nueve(9)
-    </p>
-    <!-- anula el algoritmo permite un control total de la direccionalidad. -->
-    <p> produce un salto de <br> línea en el texto </p>
-    <!-- produce un salto de linea -->
-    <cite>Marca una referencia a una fuente, o el autor de un texto citado.</cite>
-    <code>
-        #include main() { for(;;) { printf ("Hello World!\n"); } }
-    </code>
-    <!-- Es el apropiado para marcar el código de un programa. -->}
-    <p>New Products</p>
-    <ul>
-        <li><data value="3967381398">Mini Ketchup</data></li>
-        <li><data value="3967381399">Jumbo Ketchup</data></li>
-        <li><data value="3967381400">Mega Jumbo Ketchup</data></li>
-    </ul>
-    <!-- vincula un contenido dado con una traducción legible por una máquina. 
-    ejemplo muestra nombres de productos pero también asocia a cada uno con su código UPC. -->
 
-  
-    <p>El <dfn>HTML</dfn> es un lenguaje de marcado para hipertextos.</p>
-    <!-- Sirve para marcar el término que se quiere definir.
-    -->
-    <p><em>El dinero</em> es importante pero la salud lo es más.</p>  
-    <!-- es el apropiado para marcar con énfasis las partes importantes de un texto.  -->
-
-    <i> Muestra el texto marcado con un estilo en cursiva o italica. </i>
-    <!-- Muestra el texto marcado con un estilo en cursiva o italica. -->
-   
-    <p>Si está conforme escriba <kbd>sí</kbd>. Si no, pulse <kbd>esc</kbd></p>
-    <!-- Marca el texto que debe introducir el usuario. -->
-
-    <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
-    <!-- representa un texto marcado o resaltado como referencia o anotación, debido a su relevancia o importancia en un contexto particular. -->
-
-    <p>When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></p>
-    <!-- indica que el texto adjunto es una cita corta en línea.  -->
-    <ruby>
-        漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
-        字 <rp>(</rp><rt>ji</rt><rp>)</rp>
-    </ruby>
-    <!-- el elemento ruby representa pequeñas anotaciones que se representan encima, debajo o al lado del texto base, generalmente utilizadas para mostrar la pronunciación de los caracteres de Asia oriental. -->
-    <!-- rp se utiliza para proporcionar paréntesis alternativos para los navegadores que no admiten la visualización de anotaciones Ruby  -->
-    <ruby>
-        漢 <rt>Kan</rt>
-        字 <rt>ji</rt>
-    </ruby>
-    <!-- rt es la forma sencilla de usar los rp -->}
-    <p>
-        Texto normal y... <s>Texto tachado</s>
-    </p>
-    <p><samp>Keyboard not found <br>Press F1 to continue</samp></p>
-    <!-- se utiliza para incluir texto en línea que representa una muestra (o cita) de la salida de un programa de ordenador. El contenido de esta etiqueta es renderizado generalmente usando la tipografía monoespaciada por defecto del navegador. -->
-    <p>
-        El dinero es importante pero <strong>la salud</strong> lo es más.
-    </p>
-    <!-- El elemento strong es el apropiado para marcar con especial énfasis las partes más importantes de un texto. -->
-    <p>La fórmula química de agua: H<sub>2</sub>O</p>
-    <!-- define un fragmento de texto que se debe mostrar, por razones tipográficas, más bajo, y generalmente más pequeño, que el tramo principal del texto, es decir, en subíndice. -->
-    <p>Notas al pie<sup>1</sup></p>
-    <!-- define un fragmento de texto que se debe mostrar, por razones tipográficas, más alto, y generalmente más pequeño, que el tramo principal del texto, es decir, en superíndice. -->
-    <p>The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>.</p>
-    <!-- representa un periodo específico en el tiempo. Puede incluir el atributo datetime para convertir las fechas en un formato interno legible por un ordenador, permitiendo mejores resultados en los motores de búsqueda o características personalizadas como recordatorios. -->
-    <p>
-        Texto normal y... <u>Texto subrayado</u>
-    </p>
-    <!-- muestra el texto subrayado. -->
-    <p>
-        el bucle no se detendrá hasta que <var>Faltan</var> sea igual a 0.
-    </p>
-    <!-- Marca variables de programas y similares. -->
-
-    <p>http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages</p>
-
-    <!-- representa una posición dentro del texto donde el explorador puede opcionalmente saltar una línea , aunque sus reglas de salto de línea de otra manera no crearían un salto en esa posición .En páginas codificadas en UTF-8  -->
+    <!--<header></header> header se usa para definir un bloque de contenido que hará las veces de título de la página web. -->
+    <!-- <footer></footer>: define el pie de página de nuestra web. -->
+    <!-- <nav></nav> permite incluir diferentes enlaces para que el usuario pueda desplazarse entre las partes de nuestro sitio web. -->
+    <!-- <section></section> se usa para definir grandes secciones de nuestra página. -->
+    <!-- <article></article> marca los límites de un contenido específico, como una entrada de un blog o un artículo en general. -->
+    <!-- <aside></aside> se emplea para definir un contenido que está relacionado con la página, pero que se debe considerar como separado del contenido principal. -->
+    <!-- <div></div> permite dividir contenido de manera dinámica para editar la pagina. -->
 </body>
 
